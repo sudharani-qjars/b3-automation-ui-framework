@@ -1,0 +1,18 @@
+18th - Manual testing
+19th - Python theory and coding
+20th - Playwright theory and coding
+21st - Rest API, Automation framework, Git and CICD
+Interview duration : 45 to 60mins
+
+As part of the demo you all need to present the below
+1. Write automation scripts for the 3 scenarios - use the automation framework and digigo app
+2. Write the automation scripts for 3 REST APIS - use the automation framework and digigo app
+3. Push the code to GIT and create the git actions for the above
+4. Create the PPT for the same
+
+The above ratings will be considered for the Client interviews
+
+Project - Digigo Care UI
+All the realtime questions will be wrt  Digigo Care UI applicatio
+
+AI tool used in the project

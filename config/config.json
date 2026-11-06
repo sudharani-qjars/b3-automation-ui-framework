@@ -1,0 +1,20 @@
+{
+  "config":
+  {
+    "stg": {
+      "url": "https://automationexercise.com/",
+        "username": "testuser",
+        "password": "testpass"
+    },
+    "prod": {
+      "url": "https://prod.automationexercise.com/",
+      "username": "produser",
+      "password": "prodpass"
+    },
+    "dev": {
+      "url": "https://dev.automationexercise.com/",
+      "username": "devuser",
+      "password": "devpass"
+    }
+  }
+}

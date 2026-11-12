@@ -1,0 +1,11 @@
+name: Repo variables workflow
+on:
+  workflow_dispatch:
+
+jobs:
+    print-repo-variables:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Print Repo Variables
+          run: |
+            echo "APP_NAME: ${{vars.APP_NAME}}"

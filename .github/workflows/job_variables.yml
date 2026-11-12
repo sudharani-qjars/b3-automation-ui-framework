@@ -1,0 +1,17 @@
+name: Job variables workflow
+on:
+  workflow_dispatch:
+
+jobs:
+    print-job-variables:
+        runs-on: ubuntu-latest
+        env:
+          JOB_VARIABLE_1: "job_value1"
+          JOB_VARIABLE_2: "job_value2"
+          JOB_VARIABLE_3: "job_value3"
+        steps:
+        - name: Print Job Variables
+          run: |
+            echo "JOB_VARIABLE_1: $JOB_VARIABLE_1"
+            echo "JOB_VARIABLE_2: $JOB_VARIABLE_2"
+            echo "JOB_VARIABLE_3: $JOB_VARIABLE_3"

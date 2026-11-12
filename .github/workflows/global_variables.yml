@@ -1,0 +1,17 @@
+name: Global Variables workflow
+on:
+  workflow_dispatch:
+env:
+  GLOBAL_VARIABLE_1: "value1"
+  GLOBAL_VARIABLE_2: "value2"
+  GLOBAL_VARIABLE_3: "value3"
+
+jobs:
+    print-variables:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Print Global Variables
+          run: |
+            echo "GLOBAL_VARIABLE_1: $GLOBAL_VARIABLE_1"
+            echo "GLOBAL_VARIABLE_2: $GLOBAL_VARIABLE_2"
+            echo "GLOBAL_VARIABLE_3: $GLOBAL_VARIABLE_3"

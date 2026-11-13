@@ -3,7 +3,10 @@ import os
 
 class CommonLogger:
     def __init__(self, name="afwlogs"):
-        self.log_file = os.path.join(os.path.join(os.path.dirname(os.path.dirname(__file__)), "logs"),"afw.txt")
+        # Create logs directory
+        log_dir = os.path.join(os.getcwd(), "logs")
+        os.makedirs(log_dir, exist_ok=True)
+        self.log_file = os.path.join(log_dir, "afw.txt")
         self.logger = logging.getLogger(name)
         self.logger.setLevel(logging.DEBUG)
 

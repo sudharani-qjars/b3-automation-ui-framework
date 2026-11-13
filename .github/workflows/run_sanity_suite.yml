@@ -53,6 +53,7 @@ jobs:
       - name: Install Playwright Browsers
         run: |
           playwright install
+
       - name: Clean old reports
         run: |
           rm -rf reports

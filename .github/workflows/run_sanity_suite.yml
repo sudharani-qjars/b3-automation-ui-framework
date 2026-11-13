@@ -53,6 +53,10 @@ jobs:
       - name: Install Playwright Browsers
         run: |
           playwright install
+      - name: Clean old reports
+        run: |
+          rm -rf reports
+          mkdir -p reports    
 
       - name: Run UI Tests
         run: |

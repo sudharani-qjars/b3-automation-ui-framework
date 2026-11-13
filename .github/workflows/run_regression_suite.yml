@@ -58,11 +58,6 @@ jobs:
         run: |
           pytest -v -m regression
 
-      - name: Generate HTML Report
-        if: always()
-        run: |
-          pytest --html=reports/report.html --self-contained-html || true
-
       - name: Upload Test Report
         if: always()
         uses: actions/upload-artifact@v4

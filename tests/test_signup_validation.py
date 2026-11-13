@@ -1,11 +1,19 @@
 import pytest
 import time
+import random
+import string
+
+def generate_random_email():
+    username = ''.join(
+        random.choices(string.ascii_lowercase + string.digits, k=8)
+    )
+    return f"{username}@gmail.com"
 
 @pytest.mark.regression
 def test_signup_validation(home_page, signup_page, test_data_reader, login_page):
     home_page.click_signup_tab()
     user_name = test_data_reader["login"]["name"]
-    email = test_data_reader["login"]["email"]
+    email = generate_random_email()
     login_page.login(user_name,email)
     signup_page.signup_title_password_dob(
         title=test_data_reader["signup"]["title"],

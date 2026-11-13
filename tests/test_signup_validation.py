@@ -1,7 +1,7 @@
 import pytest
 import time
 
-@pytest.mark.sanity
+@pytest.mark.regression
 def test_signup_validation(home_page, signup_page, test_data_reader, login_page):
     home_page.click_signup_tab()
     user_name = test_data_reader["login"]["name"]
